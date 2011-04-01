@@ -36,6 +36,7 @@ abstract class AbstractEvent implements Event
 
   static String buildName(Description desc)
   {
-    return desc.getClassName()+'.'+desc.getMethodName();
+//    return desc.getClassName()+'.'+desc.getMethodName();
+      return desc.getDisplayName();
   }
 }

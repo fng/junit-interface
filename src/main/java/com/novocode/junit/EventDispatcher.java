@@ -1,13 +1,13 @@
 package com.novocode.junit;
 
-import java.io.IOException;
-import java.util.HashSet;
-
 import org.junit.runner.Description;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunListener;
 import org.scalatools.testing.EventHandler;
+
+import java.io.IOException;
+import java.util.HashSet;
 
 
 final class EventDispatcher extends RunListener
@@ -26,12 +26,12 @@ final class EventDispatcher extends RunListener
     this.verbose = verbose;
   }
 
-  @Override
-  public void testAssumptionFailure(Failure failure)
-  {
-    uncapture(true);
-    postIfFirst(new TestAssumptionFailedEvent(failure));
-  }
+//  @Override
+//  public void testAssumptionFailure(Failure failure)
+//  {
+//    uncapture(true);
+//    postIfFirst(new TestAssumptionFailedEvent(failure));
+//  }
 
   @Override
   public void testFailure(Failure failure)
