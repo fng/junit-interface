@@ -4,6 +4,7 @@ import java.io.File
 class JUnitInterfaceProject(info: ProjectInfo) extends DefaultProject(info)
 {
   val junit = "junit" % "junit" % "4.4"
+  val commonsLang = "commons-lang" % "commons-lang" % "2.4"
   val testInterface = "org.scala-tools.testing" % "test-interface" % "0.5"
   override def javaCompileOptions = JavaCompileOption("-target") :: JavaCompileOption("1.5") :: Nil
 
